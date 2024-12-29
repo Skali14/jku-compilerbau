@@ -1,0 +1,2661 @@
+#SimpleCodeGenerationTest.testLocalVarsIncDec()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 2
+8: const_2
+9: store_0
+10: const_5
+11: store_1
+12: inc 0, 1
+15: inc 1, -1
+18: load_0
+19: load_1
+20: add
+21: const_0
+22: print
+23: exit
+24: return
+#SimpleCodeGenerationTest.testReadAndPrint()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 1
+8: const_0
+9: store_0
+10: read
+11: store_0
+12: load_0
+13: const_0
+14: print
+15: exit
+16: return
+#SimpleCodeGenerationTest.bsp01a()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: const_m1
+9: const_2
+10: add
+11: store_2
+12: load_2
+13: const_0
+14: print
+15: exit
+16: return
+#SimpleCodeGenerationTest.testPrint()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 0
+8: const 97
+13: const_0
+14: bprint
+15: const 98
+20: const_1
+21: bprint
+22: const 99
+27: const_2
+28: bprint
+29: const 100
+34: const_3
+35: bprint
+36: const 101
+41: const_4
+42: bprint
+43: exit
+44: return
+#SimpleCodeGenerationTest.testArrayAndDesignator()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: const_5
+9: newarray 1
+11: store_2
+12: load_2
+13: const_0
+14: new 1
+17: astore
+18: load_2
+19: const_0
+20: aload
+21: new 1
+24: putfield 0
+27: load_2
+28: const_0
+29: aload
+30: getfield 0
+33: new 1
+36: putfield 0
+39: load_2
+40: const_0
+41: aload
+42: getfield 0
+45: getfield 0
+48: const 10
+53: newarray 1
+55: putfield 0
+58: load_2
+59: const_3
+60: new 1
+63: astore
+64: load_2
+65: const_3
+66: aload
+67: new 1
+70: putfield 0
+73: load_2
+74: const_3
+75: aload
+76: getfield 0
+79: new 1
+82: putfield 0
+85: load_2
+86: const_3
+87: aload
+88: getfield 0
+91: getfield 0
+94: const 30
+99: newarray 1
+101: putfield 0
+104: load_2
+105: const_0
+106: aload
+107: getfield 0
+110: getfield 0
+113: getfield 0
+116: const_0
+117: dup2
+118: aload
+119: const_m1
+120: add
+121: astore
+122: load_2
+123: const_0
+124: aload
+125: getfield 0
+128: getfield 0
+131: getfield 0
+134: const 8
+139: dup2
+140: aload
+141: const_1
+142: add
+143: astore
+144: load_2
+145: const_3
+146: aload
+147: getfield 0
+150: getfield 0
+153: getfield 0
+156: const_2
+157: dup2
+158: aload
+159: const_1
+160: add
+161: astore
+162: load_2
+163: const_3
+164: aload
+165: getfield 0
+168: getfield 0
+171: getfield 0
+174: const_2
+175: dup2
+176: aload
+177: const_3
+178: mul
+179: astore
+180: load_2
+181: const_0
+182: aload
+183: getfield 0
+186: getfield 0
+189: getfield 0
+192: const 8
+197: dup2
+198: aload
+199: const 50
+204: load_2
+205: const_3
+206: aload
+207: getfield 0
+210: getfield 0
+213: getfield 0
+216: const_2
+217: aload
+218: load_2
+219: const_3
+220: aload
+221: getfield 0
+224: getfield 0
+227: getfield 0
+230: const_2
+231: aload
+232: mul
+233: load_2
+234: const_0
+235: aload
+236: getfield 0
+239: getfield 0
+242: getfield 0
+245: const_0
+246: aload
+247: mul
+248: add
+249: add
+250: astore
+251: load_2
+252: const_0
+253: aload
+254: getfield 0
+257: getfield 0
+260: getfield 0
+263: const 8
+268: aload
+269: const_0
+270: print
+271: exit
+272: return
+#SimpleCodeGenerationTest.testDesignator()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: new 1
+11: store_2
+12: load_2
+13: new 1
+16: putfield 0
+19: load_2
+20: getfield 0
+23: new 1
+26: putfield 0
+29: load_2
+30: getfield 0
+33: getfield 0
+36: dup
+37: getfield 0
+40: const_1
+41: add
+42: putfield 0
+45: load_2
+46: getfield 0
+49: getfield 0
+52: getfield 0
+55: const_0
+56: print
+57: exit
+58: return
+#SimpleCodeGenerationTest.testArrayAndDesignatorAndAssign()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: const_5
+9: newarray 1
+11: store_2
+12: load_2
+13: const_0
+14: new 1
+17: astore
+18: load_2
+19: const_0
+20: aload
+21: new 1
+24: putfield 0
+27: load_2
+28: const_0
+29: aload
+30: getfield 0
+33: new 1
+36: putfield 0
+39: load_2
+40: const_0
+41: aload
+42: getfield 0
+45: getfield 0
+48: const_2
+49: newarray 1
+51: putfield 0
+54: load_2
+55: const_3
+56: new 1
+59: astore
+60: load_2
+61: const_3
+62: aload
+63: new 1
+66: putfield 0
+69: load_2
+70: const_3
+71: aload
+72: getfield 0
+75: new 1
+78: putfield 0
+81: load_2
+82: const_3
+83: aload
+84: getfield 0
+87: getfield 0
+90: const_3
+91: newarray 1
+93: putfield 0
+96: load_2
+97: const_0
+98: aload
+99: getfield 0
+102: getfield 0
+105: getfield 0
+108: const_1
+109: dup2
+110: aload
+111: const_1
+112: add
+113: astore
+114: load_2
+115: const_0
+116: aload
+117: getfield 0
+120: getfield 0
+123: getfield 0
+126: const_1
+127: dup2
+128: aload
+129: const 256
+134: mul
+135: astore
+136: load_2
+137: const_0
+138: aload
+139: getfield 0
+142: getfield 0
+145: getfield 0
+148: const_1
+149: dup2
+150: aload
+151: const_2
+152: div
+153: astore
+154: load_2
+155: const_0
+156: aload
+157: getfield 0
+160: getfield 0
+163: getfield 0
+166: const_1
+167: dup2
+168: aload
+169: const_m1
+170: add
+171: astore
+172: load_2
+173: const_0
+174: aload
+175: getfield 0
+178: getfield 0
+181: getfield 0
+184: const_1
+185: dup2
+186: aload
+187: const 64
+192: rem
+193: astore
+194: load_2
+195: const_3
+196: aload
+197: getfield 0
+200: getfield 0
+203: getfield 0
+206: const_2
+207: dup2
+208: aload
+209: const_1
+210: add
+211: astore
+212: load_2
+213: const_3
+214: aload
+215: getfield 0
+218: getfield 0
+221: getfield 0
+224: const_2
+225: dup2
+226: aload
+227: const 21
+232: mul
+233: astore
+234: load_2
+235: const_0
+236: aload
+237: getfield 0
+240: getfield 0
+243: getfield 0
+246: const_1
+247: dup2
+248: aload
+249: load_2
+250: const_3
+251: aload
+252: getfield 0
+255: getfield 0
+258: getfield 0
+261: const_2
+262: aload
+263: sub
+264: astore
+265: load_2
+266: const_0
+267: aload
+268: getfield 0
+271: getfield 0
+274: getfield 0
+277: const_1
+278: aload
+279: const_0
+280: print
+281: exit
+282: return
+#SimpleCodeGenerationTest.bsp01()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: const_3
+9: store_2
+10: load_2
+11: const_0
+12: print
+13: exit
+14: return
+#SimpleCodeGenerationTest.bsp02()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: const 10
+13: putstatic 1
+16: getstatic 1
+19: const_0
+20: print
+21: exit
+22: return
+#SimpleCodeGenerationTest.bsp03()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: const_1
+9: putstatic 1
+12: const_3
+13: getstatic 1
+16: add
+17: store_2
+18: load_2
+19: const_0
+20: print
+21: exit
+22: return
+#SimpleCodeGenerationTest.bsp04()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: const_1
+9: putstatic 1
+12: const_3
+13: getstatic 1
+16: const 12
+21: mul
+22: add
+23: load_2
+24: sub
+25: store_2
+26: load_2
+27: const_0
+28: print
+29: exit
+30: return
+#SimpleCodeGenerationTest.bsp05()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: const 10
+13: newarray 1
+15: store_0
+16: load_0
+17: const_5
+18: const 10
+23: astore
+24: load_0
+25: const_0
+26: aload
+27: const_0
+28: print
+29: load_0
+30: const_5
+31: aload
+32: const_0
+33: print
+34: exit
+35: return
+#SimpleCodeGenerationTest.bsp06()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: const 10
+13: newarray 1
+15: store_0
+16: load_0
+17: const_5
+18: const 10
+23: astore
+24: new 2
+27: store_1
+28: load_1
+29: load_0
+30: const_5
+31: aload
+32: const_3
+33: mul
+34: putfield 1
+37: load_1
+38: getfield 1
+41: const_0
+42: print
+43: exit
+44: return
+#SimpleCodeGenerationTest.bsp07()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: inc 2, -1
+11: load_2
+12: const_0
+13: print
+14: exit
+15: return
+#SimpleCodeGenerationTest.bsp08()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: getstatic 1
+11: const_m1
+12: add
+13: putstatic 1
+16: getstatic 1
+19: const_0
+20: print
+21: exit
+22: return
+#SimpleCodeGenerationTest.bsp09()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: new 2
+11: store_1
+12: load_1
+13: dup
+14: getfield 1
+17: const_m1
+18: add
+19: putfield 1
+22: load_1
+23: getfield 1
+26: const_0
+27: print
+28: exit
+29: return
+#SimpleCodeGenerationTest.bsp10()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: const 10
+13: newarray 1
+15: store_0
+16: load_0
+17: const_0
+18: dup2
+19: aload
+20: const_m1
+21: add
+22: astore
+23: load_0
+24: const_0
+25: aload
+26: const_0
+27: print
+28: exit
+29: return
+#SimpleCodeGenerationTest.testConstDecl()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 0
+8: const 100
+13: const_0
+14: print
+15: const 65
+20: const_0
+21: bprint
+22: exit
+23: return
+#SimpleCodeGenerationTest.twoMethods()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 1
+8: const_0
+9: store_0
+10: exit
+11: return
+12: enter 0, 0
+15: const_2
+16: const_0
+17: print
+18: exit
+19: return
+#SimpleCodeGenerationTest.bspEmpty()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: exit
+9: return
+#SimpleCodeGenerationTest.testFields()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 2
+8: new 1
+11: store_0
+12: new 1
+15: store_1
+16: load_0
+17: const 20
+22: putfield 0
+25: load_0
+26: dup
+27: getfield 0
+30: const_1
+31: add
+32: putfield 0
+35: load_0
+36: dup
+37: getfield 0
+40: const 7
+45: div
+46: putfield 0
+49: load_0
+50: dup
+51: getfield 0
+54: load_0
+55: getfield 0
+58: mul
+59: putfield 0
+62: load_0
+63: dup
+64: getfield 0
+67: load_0
+68: getfield 0
+71: const_5
+72: sub
+73: rem
+74: putfield 0
+77: load_1
+78: new 1
+81: putfield 0
+84: load_1
+85: getfield 0
+88: const -12
+93: putfield 0
+96: load_1
+97: getfield 0
+100: dup
+101: getfield 0
+104: load_0
+105: getfield 0
+108: sub
+109: putfield 0
+112: load_1
+113: getfield 0
+116: dup
+117: getfield 0
+120: load_0
+121: getfield 0
+124: neg
+125: mul
+126: putfield 0
+129: load_1
+130: getfield 0
+133: dup
+134: getfield 0
+137: const_5
+138: rem
+139: putfield 0
+142: load_1
+143: getfield 0
+146: dup
+147: getfield 0
+150: load_0
+151: getfield 0
+154: const_2
+155: const_3
+156: mul
+157: add
+158: mul
+159: putfield 0
+162: load_1
+163: getfield 0
+166: getfield 0
+169: const_0
+170: print
+171: exit
+172: return
+#SimpleCodeGenerationTest.testMulops()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 2
+8: const 42
+13: store_0
+14: const_3
+15: store_1
+16: load_0
+17: load_1
+18: div
+19: store_0
+20: load_0
+21: load_1
+22: load_1
+23: mul
+24: rem
+25: store_0
+26: load_0
+27: const_0
+28: print
+29: exit
+30: return
+#SimpleCodeGenerationTest.testArrayIndexExpression()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 1
+8: const 10
+13: newarray 1
+15: store_0
+16: load_0
+17: const_1
+18: const_2
+19: add
+20: const_3
+21: mul
+22: const_4
+23: astore
+24: load_0
+25: const_4
+26: const_2
+27: const_2
+28: mul
+29: sub
+30: const_2
+31: astore
+32: load_0
+33: const 90
+38: const 10
+43: div
+44: aload
+45: const_0
+46: print
+47: load_0
+48: const 6
+53: const_3
+54: const_2
+55: mul
+56: sub
+57: aload
+58: const_0
+59: print
+60: exit
+61: return
+#SimpleCodeGenerationTest.testLocalVarsIncDec()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 2
+8: call -8 (=0)
+11: const_2
+12: store_0
+13: const_5
+14: store_1
+15: inc 0, 1
+18: inc 1, -1
+21: load_0
+22: load_1
+23: add
+24: const_0
+25: print
+26: exit
+27: return
+#SimpleCodeGenerationTest.testReadAndPrint()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 1
+8: call -8 (=0)
+11: const_0
+12: store_0
+13: read
+14: store_0
+15: load_0
+16: const_0
+17: print
+18: exit
+19: return
+#SimpleCodeGenerationTest.bsp01a()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: const_m1
+12: const_2
+13: add
+14: store_2
+15: load_2
+16: const_0
+17: print
+18: exit
+19: return
+#SimpleCodeGenerationTest.testPrint()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 0
+8: call -8 (=0)
+11: const 97
+16: const_0
+17: bprint
+18: const 98
+23: const_1
+24: bprint
+25: const 99
+30: const_2
+31: bprint
+32: const 100
+37: const_3
+38: bprint
+39: const 101
+44: const_4
+45: bprint
+46: exit
+47: return
+#SimpleCodeGenerationTest.testArrayAndDesignator()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: const_5
+12: newarray 1
+14: store_2
+15: load_2
+16: const_0
+17: new 1
+20: astore
+21: load_2
+22: const_0
+23: aload
+24: new 1
+27: putfield 0
+30: load_2
+31: const_0
+32: aload
+33: getfield 0
+36: new 1
+39: putfield 0
+42: load_2
+43: const_0
+44: aload
+45: getfield 0
+48: getfield 0
+51: const 10
+56: newarray 1
+58: putfield 0
+61: load_2
+62: const_3
+63: new 1
+66: astore
+67: load_2
+68: const_3
+69: aload
+70: new 1
+73: putfield 0
+76: load_2
+77: const_3
+78: aload
+79: getfield 0
+82: new 1
+85: putfield 0
+88: load_2
+89: const_3
+90: aload
+91: getfield 0
+94: getfield 0
+97: const 30
+102: newarray 1
+104: putfield 0
+107: load_2
+108: const_0
+109: aload
+110: getfield 0
+113: getfield 0
+116: getfield 0
+119: const_0
+120: dup2
+121: aload
+122: const_m1
+123: add
+124: astore
+125: load_2
+126: const_0
+127: aload
+128: getfield 0
+131: getfield 0
+134: getfield 0
+137: const 8
+142: dup2
+143: aload
+144: const_1
+145: add
+146: astore
+147: load_2
+148: const_3
+149: aload
+150: getfield 0
+153: getfield 0
+156: getfield 0
+159: const_2
+160: dup2
+161: aload
+162: const_1
+163: add
+164: astore
+165: load_2
+166: const_3
+167: aload
+168: getfield 0
+171: getfield 0
+174: getfield 0
+177: const_2
+178: dup2
+179: aload
+180: const_3
+181: mul
+182: astore
+183: load_2
+184: const_0
+185: aload
+186: getfield 0
+189: getfield 0
+192: getfield 0
+195: const 8
+200: dup2
+201: aload
+202: const 50
+207: load_2
+208: const_3
+209: aload
+210: getfield 0
+213: getfield 0
+216: getfield 0
+219: const_2
+220: aload
+221: load_2
+222: const_3
+223: aload
+224: getfield 0
+227: getfield 0
+230: getfield 0
+233: const_2
+234: aload
+235: mul
+236: load_2
+237: const_0
+238: aload
+239: getfield 0
+242: getfield 0
+245: getfield 0
+248: const_0
+249: aload
+250: mul
+251: add
+252: add
+253: astore
+254: load_2
+255: const_0
+256: aload
+257: getfield 0
+260: getfield 0
+263: getfield 0
+266: const 8
+271: aload
+272: const_0
+273: print
+274: exit
+275: return
+#SimpleCodeGenerationTest.testDesignator()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: new 1
+14: store_2
+15: load_2
+16: new 1
+19: putfield 0
+22: load_2
+23: getfield 0
+26: new 1
+29: putfield 0
+32: load_2
+33: getfield 0
+36: getfield 0
+39: dup
+40: getfield 0
+43: const_1
+44: add
+45: putfield 0
+48: load_2
+49: getfield 0
+52: getfield 0
+55: getfield 0
+58: const_0
+59: print
+60: exit
+61: return
+#SimpleCodeGenerationTest.testArrayAndDesignatorAndAssign()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: const_5
+12: newarray 1
+14: store_2
+15: load_2
+16: const_0
+17: new 1
+20: astore
+21: load_2
+22: const_0
+23: aload
+24: new 1
+27: putfield 0
+30: load_2
+31: const_0
+32: aload
+33: getfield 0
+36: new 1
+39: putfield 0
+42: load_2
+43: const_0
+44: aload
+45: getfield 0
+48: getfield 0
+51: const_2
+52: newarray 1
+54: putfield 0
+57: load_2
+58: const_3
+59: new 1
+62: astore
+63: load_2
+64: const_3
+65: aload
+66: new 1
+69: putfield 0
+72: load_2
+73: const_3
+74: aload
+75: getfield 0
+78: new 1
+81: putfield 0
+84: load_2
+85: const_3
+86: aload
+87: getfield 0
+90: getfield 0
+93: const_3
+94: newarray 1
+96: putfield 0
+99: load_2
+100: const_0
+101: aload
+102: getfield 0
+105: getfield 0
+108: getfield 0
+111: const_1
+112: dup2
+113: aload
+114: const_1
+115: add
+116: astore
+117: load_2
+118: const_0
+119: aload
+120: getfield 0
+123: getfield 0
+126: getfield 0
+129: const_1
+130: dup2
+131: aload
+132: const 256
+137: mul
+138: astore
+139: load_2
+140: const_0
+141: aload
+142: getfield 0
+145: getfield 0
+148: getfield 0
+151: const_1
+152: dup2
+153: aload
+154: const_2
+155: div
+156: astore
+157: load_2
+158: const_0
+159: aload
+160: getfield 0
+163: getfield 0
+166: getfield 0
+169: const_1
+170: dup2
+171: aload
+172: const_m1
+173: add
+174: astore
+175: load_2
+176: const_0
+177: aload
+178: getfield 0
+181: getfield 0
+184: getfield 0
+187: const_1
+188: dup2
+189: aload
+190: const 64
+195: rem
+196: astore
+197: load_2
+198: const_3
+199: aload
+200: getfield 0
+203: getfield 0
+206: getfield 0
+209: const_2
+210: dup2
+211: aload
+212: const_1
+213: add
+214: astore
+215: load_2
+216: const_3
+217: aload
+218: getfield 0
+221: getfield 0
+224: getfield 0
+227: const_2
+228: dup2
+229: aload
+230: const 21
+235: mul
+236: astore
+237: load_2
+238: const_0
+239: aload
+240: getfield 0
+243: getfield 0
+246: getfield 0
+249: const_1
+250: dup2
+251: aload
+252: load_2
+253: const_3
+254: aload
+255: getfield 0
+258: getfield 0
+261: getfield 0
+264: const_2
+265: aload
+266: sub
+267: astore
+268: load_2
+269: const_0
+270: aload
+271: getfield 0
+274: getfield 0
+277: getfield 0
+280: const_1
+281: aload
+282: const_0
+283: print
+284: exit
+285: return
+#SimpleCodeGenerationTest.bsp01()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: const_3
+12: store_2
+13: load_2
+14: const_0
+15: print
+16: exit
+17: return
+#SimpleCodeGenerationTest.bsp02()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: const 10
+16: putstatic 1
+19: getstatic 1
+22: const_0
+23: print
+24: exit
+25: return
+#SimpleCodeGenerationTest.bsp03()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: const_1
+12: putstatic 1
+15: const_3
+16: getstatic 1
+19: add
+20: store_2
+21: load_2
+22: const_0
+23: print
+24: exit
+25: return
+#SimpleCodeGenerationTest.bsp04()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: const_1
+12: putstatic 1
+15: const_3
+16: getstatic 1
+19: const 12
+24: mul
+25: add
+26: load_2
+27: sub
+28: store_2
+29: load_2
+30: const_0
+31: print
+32: exit
+33: return
+#SimpleCodeGenerationTest.bsp05()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: const 10
+16: newarray 1
+18: store_0
+19: load_0
+20: const_5
+21: const 10
+26: astore
+27: load_0
+28: const_0
+29: aload
+30: const_0
+31: print
+32: load_0
+33: const_5
+34: aload
+35: const_0
+36: print
+37: exit
+38: return
+#SimpleCodeGenerationTest.bsp06()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: const 10
+16: newarray 1
+18: store_0
+19: load_0
+20: const_5
+21: const 10
+26: astore
+27: new 2
+30: store_1
+31: load_1
+32: load_0
+33: const_5
+34: aload
+35: const_3
+36: mul
+37: putfield 1
+40: load_1
+41: getfield 1
+44: const_0
+45: print
+46: exit
+47: return
+#SimpleCodeGenerationTest.bsp07()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: inc 2, -1
+14: load_2
+15: const_0
+16: print
+17: exit
+18: return
+#SimpleCodeGenerationTest.bsp08()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: getstatic 1
+14: const_m1
+15: add
+16: putstatic 1
+19: getstatic 1
+22: const_0
+23: print
+24: exit
+25: return
+#SimpleCodeGenerationTest.bsp09()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: new 2
+14: store_1
+15: load_1
+16: dup
+17: getfield 1
+20: const_m1
+21: add
+22: putfield 1
+25: load_1
+26: getfield 1
+29: const_0
+30: print
+31: exit
+32: return
+#SimpleCodeGenerationTest.bsp10()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: const 10
+16: newarray 1
+18: store_0
+19: load_0
+20: const_0
+21: dup2
+22: aload
+23: const_m1
+24: add
+25: astore
+26: load_0
+27: const_0
+28: aload
+29: const_0
+30: print
+31: exit
+32: return
+#SimpleCodeGenerationTest.testConstDecl()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 0
+8: call -8 (=0)
+11: const 100
+16: const_0
+17: print
+18: const 65
+23: const_0
+24: bprint
+25: exit
+26: return
+#SimpleCodeGenerationTest.twoMethods()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 1
+8: const_0
+9: store_0
+10: exit
+11: return
+12: enter 0, 0
+15: call -15 (=0)
+18: const_2
+19: const_0
+20: print
+21: exit
+22: return
+#SimpleCodeGenerationTest.bspEmpty()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: exit
+12: return
+#SimpleCodeGenerationTest.testFields()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 2
+8: call -8 (=0)
+11: new 1
+14: store_0
+15: new 1
+18: store_1
+19: load_0
+20: const 20
+25: putfield 0
+28: load_0
+29: dup
+30: getfield 0
+33: const_1
+34: add
+35: putfield 0
+38: load_0
+39: dup
+40: getfield 0
+43: const 7
+48: div
+49: putfield 0
+52: load_0
+53: dup
+54: getfield 0
+57: load_0
+58: getfield 0
+61: mul
+62: putfield 0
+65: load_0
+66: dup
+67: getfield 0
+70: load_0
+71: getfield 0
+74: const_5
+75: sub
+76: rem
+77: putfield 0
+80: load_1
+81: new 1
+84: putfield 0
+87: load_1
+88: getfield 0
+91: const -12
+96: putfield 0
+99: load_1
+100: getfield 0
+103: dup
+104: getfield 0
+107: load_0
+108: getfield 0
+111: sub
+112: putfield 0
+115: load_1
+116: getfield 0
+119: dup
+120: getfield 0
+123: load_0
+124: getfield 0
+127: neg
+128: mul
+129: putfield 0
+132: load_1
+133: getfield 0
+136: dup
+137: getfield 0
+140: const_5
+141: rem
+142: putfield 0
+145: load_1
+146: getfield 0
+149: dup
+150: getfield 0
+153: load_0
+154: getfield 0
+157: const_2
+158: const_3
+159: mul
+160: add
+161: mul
+162: putfield 0
+165: load_1
+166: getfield 0
+169: getfield 0
+172: const_0
+173: print
+174: exit
+175: return
+#SimpleCodeGenerationTest.testMulops()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 2
+8: call -8 (=0)
+11: const 42
+16: store_0
+17: const_3
+18: store_1
+19: load_0
+20: load_1
+21: div
+22: store_0
+23: load_0
+24: load_1
+25: load_1
+26: mul
+27: rem
+28: store_0
+29: load_0
+30: const_0
+31: print
+32: exit
+33: return
+#SimpleCodeGenerationTest.testArrayIndexExpression()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 1
+8: call -8 (=0)
+11: const 10
+16: newarray 1
+18: store_0
+19: load_0
+20: const_1
+21: const_2
+22: add
+23: const_3
+24: mul
+25: const_4
+26: astore
+27: load_0
+28: const_4
+29: const_2
+30: const_2
+31: mul
+32: sub
+33: const_2
+34: astore
+35: load_0
+36: const 90
+41: const 10
+46: div
+47: aload
+48: const_0
+49: print
+50: load_0
+51: const 6
+56: const_3
+57: const_2
+58: mul
+59: sub
+60: aload
+61: const_0
+62: print
+63: exit
+64: return
+#CodeGenerationTest.testSimpleBreak()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 0
+8: call -8 (=0)
+11: const 42
+16: const_0
+17: jle 9 (=26)
+20: jmp 6 (=26)
+23: jmp -12 (=11)
+26: exit
+27: return
+#CodeGenerationTest.testWeekdayEnum()
+0: enter 0, 0
+3: new 7
+6: putstatic 0
+9: getstatic 0
+12: const_1
+13: putfield 0
+16: getstatic 0
+19: const_2
+20: putfield 1
+23: getstatic 0
+26: const_3
+27: putfield 2
+30: getstatic 0
+33: const_4
+34: putfield 3
+37: getstatic 0
+40: const_5
+41: putfield 4
+44: getstatic 0
+47: const 6
+52: putfield 5
+55: getstatic 0
+58: const 7
+63: putfield 6
+66: exit
+67: return
+68: enter 0, 0
+71: const 73
+76: const_0
+77: bprint
+78: const 116
+83: const_0
+84: bprint
+85: const 32
+90: const_0
+91: bprint
+92: const 105
+97: const_0
+98: bprint
+99: const 115
+104: const_0
+105: bprint
+106: const 32
+111: const_0
+112: bprint
+113: const 87
+118: const_0
+119: bprint
+120: const 101
+125: const_0
+126: bprint
+127: const 100
+132: const_0
+133: bprint
+134: const 110
+139: const_0
+140: bprint
+141: const 101
+146: const_0
+147: bprint
+148: const 115
+153: const_0
+154: bprint
+155: const 100
+160: const_0
+161: bprint
+162: const 97
+167: const_0
+168: bprint
+169: const 121
+174: const_0
+175: bprint
+176: const 32
+181: const_0
+182: bprint
+183: const 109
+188: const_0
+189: bprint
+190: const 121
+195: const_0
+196: bprint
+197: const 32
+202: const_0
+203: bprint
+204: const 100
+209: const_0
+210: bprint
+211: const 117
+216: const_0
+217: bprint
+218: const 100
+223: const_0
+224: bprint
+225: const 101
+230: const_0
+231: bprint
+232: const 115
+237: const_0
+238: bprint
+239: exit
+240: return
+241: enter 0, 1
+244: call -244 (=0)
+247: read
+248: store_0
+249: load_0
+250: getstatic 0
+253: getfield 2
+256: jne 6 (=262)
+259: call -191 (=68)
+262: exit
+263: return
+#CodeGenerationTest.coverUniverseMethod()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 1, 1
+8: load_0
+9: exit
+10: return
+11: trap 1
+13: enter 1, 1
+16: load_0
+17: call -12 (=5)
+20: const 30
+25: sub
+26: exit
+27: return
+28: trap 1
+30: enter 0, 0
+33: call -33 (=0)
+36: const 65
+41: call -28 (=13)
+44: const_0
+45: bprint
+46: exit
+47: return
+#CodeGenerationTest.fibDyn()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 1, 2
+8: load_0
+9: const_1
+10: jgt 6 (=16)
+13: const_1
+14: exit
+15: return
+16: getstatic 0
+19: load_0
+20: aload
+21: const_0
+22: jeq 10 (=32)
+25: getstatic 0
+28: load_0
+29: aload
+30: exit
+31: return
+32: load_0
+33: const_1
+34: sub
+35: call -30 (=5)
+38: load_0
+39: const_2
+40: sub
+41: call -36 (=5)
+44: add
+45: store_1
+46: getstatic 0
+49: load_0
+50: load_1
+51: astore
+52: load_1
+53: exit
+54: return
+55: trap 1
+57: enter 0, 1
+60: call -60 (=0)
+63: const 1000
+68: newarray 1
+70: putstatic 0
+73: read
+74: store_0
+75: load_0
+76: call -71 (=5)
+79: const_0
+80: print
+81: exit
+82: return
+#CodeGenerationTest.testAnimals()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 2, 2
+8: load_0
+9: load_1
+10: putfield 0
+13: exit
+14: return
+15: enter 1, 4
+18: load_0
+19: getfield 0
+22: arraylength
+23: store_2
+24: const_0
+25: store_1
+26: load_1
+27: load_2
+28: jge 18 (=46)
+31: load_0
+32: getfield 0
+35: load_1
+36: baload
+37: const_0
+38: bprint
+39: load_1
+40: const_1
+41: add
+42: store_1
+43: jmp -17 (=26)
+46: exit
+47: return
+48: enter 0, 5
+51: call -51 (=0)
+54: const_3
+55: newarray 0
+57: store_2
+58: load_2
+59: const_0
+60: const 99
+65: bastore
+66: load_2
+67: const_1
+68: const 97
+73: bastore
+74: load_2
+75: const_2
+76: const 116
+81: bastore
+82: const_3
+83: newarray 0
+85: store_3
+86: load_3
+87: const_0
+88: const 100
+93: bastore
+94: load_3
+95: const_1
+96: const 111
+101: bastore
+102: load_3
+103: const_2
+104: const 103
+109: bastore
+110: const 7
+115: newarray 0
+117: store 4
+119: load 4
+121: const_0
+122: const 111
+127: bastore
+128: load 4
+130: const_1
+131: const 99
+136: bastore
+137: load 4
+139: const_2
+140: const 116
+145: bastore
+146: load 4
+148: const_3
+149: const 111
+154: bastore
+155: load 4
+157: const_4
+158: const 112
+163: bastore
+164: load 4
+166: const_5
+167: const 117
+172: bastore
+173: load 4
+175: const 6
+180: const 115
+185: bastore
+186: const_3
+187: newarray 1
+189: store_1
+190: load_1
+191: const_0
+192: new 1
+195: astore
+196: load_1
+197: const_1
+198: new 1
+201: astore
+202: load_1
+203: const_2
+204: new 1
+207: astore
+208: load_1
+209: const_0
+210: aload
+211: load_2
+212: call -207 (=5)
+215: load_1
+216: const_1
+217: aload
+218: load_3
+219: call -214 (=5)
+222: load_1
+223: const_2
+224: aload
+225: load 4
+227: call -222 (=5)
+230: read
+231: store_0
+232: load_1
+233: load_0
+234: aload
+235: call -220 (=15)
+238: exit
+239: return
+#CodeGenerationTest.testBreak()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 1
+8: call -8 (=0)
+11: read
+12: store_0
+13: getstatic 0
+16: load_0
+17: jgt 40 (=57)
+20: const_1
+21: const_2
+22: jge 14 (=36)
+25: const_1
+26: const_1
+27: jne 6 (=33)
+30: jmp 6 (=36)
+33: jmp -13 (=20)
+36: getstatic 0
+39: const_5
+40: jne 6 (=46)
+43: jmp 14 (=57)
+46: getstatic 0
+49: const_1
+50: add
+51: putstatic 0
+54: jmp -41 (=13)
+57: getstatic 0
+60: const_0
+61: print
+62: exit
+63: return
+#CodeGenerationTest.compareNeg()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 1
+8: call -8 (=0)
+11: const -42
+16: store_0
+17: load_0
+18: const -42
+23: jne 13 (=36)
+26: const 42
+31: const_0
+32: print
+33: jmp 6 (=39)
+36: load_0
+37: const_0
+38: print
+39: exit
+40: return
+#CodeGenerationTest.methodCall()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 0
+8: const 98
+13: const_0
+14: bprint
+15: const 97
+20: const_0
+21: bprint
+22: const 114
+27: const_0
+28: bprint
+29: exit
+30: return
+31: enter 0, 0
+34: const 102
+39: const_0
+40: bprint
+41: const 111
+46: const_0
+47: bprint
+48: const 111
+53: const_0
+54: bprint
+55: exit
+56: return
+57: enter 0, 0
+60: call -60 (=0)
+63: call -32 (=31)
+66: exit
+67: return
+#CodeGenerationTest.fib()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 1, 1
+8: load_0
+9: const_1
+10: jgt 6 (=16)
+13: const_1
+14: exit
+15: return
+16: load_0
+17: const_1
+18: sub
+19: call -14 (=5)
+22: load_0
+23: const_2
+24: sub
+25: call -20 (=5)
+28: add
+29: exit
+30: return
+31: trap 1
+33: enter 0, 1
+36: call -36 (=0)
+39: read
+40: store_0
+41: load_0
+42: call -37 (=5)
+45: const_0
+46: print
+47: exit
+48: return
+#CodeGenerationTest.unusedReturnVal()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 0
+8: const 351
+13: exit
+14: return
+15: trap 1
+17: enter 0, 0
+20: call -15 (=5)
+23: pop
+24: const 42
+29: exit
+30: return
+31: trap 1
+33: enter 0, 0
+36: call -36 (=0)
+39: const 932
+44: call -27 (=17)
+47: add
+48: const_0
+49: print
+50: exit
+51: return
+#CodeGenerationTest.testExpressionsForInitialization()
+0: enter 0, 0
+3: const 13
+8: putstatic 0
+11: const_5
+12: newarray 1
+14: putstatic 1
+17: new 3
+20: putstatic 2
+23: getstatic 2
+26: const 42
+31: getstatic 0
+34: mul
+35: putfield 0
+38: getstatic 2
+41: const 42
+46: const 23
+51: add
+52: putfield 1
+55: getstatic 2
+58: getstatic 1
+61: arraylength
+62: putfield 2
+65: exit
+66: return
+67: enter 0, 2
+70: call -70 (=0)
+73: getstatic 2
+76: getfield 0
+79: store_0
+80: getstatic 2
+83: getfield 1
+86: store_1
+87: getstatic 0
+90: const_0
+91: print
+92: const 32
+97: const_0
+98: bprint
+99: load_0
+100: const_0
+101: print
+102: const 32
+107: const_0
+108: bprint
+109: getstatic 2
+112: getfield 0
+115: const_0
+116: print
+117: const 32
+122: const_0
+123: bprint
+124: load_1
+125: const_0
+126: bprint
+127: const 32
+132: const_0
+133: bprint
+134: getstatic 2
+137: getfield 1
+140: const_0
+141: bprint
+142: const 32
+147: const_0
+148: bprint
+149: getstatic 2
+152: getfield 2
+155: const_0
+156: print
+157: const 32
+162: const_0
+163: bprint
+164: getstatic 1
+167: arraylength
+168: const_0
+169: print
+170: exit
+171: return
+#CodeGenerationTest.lenTest()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 1
+8: call -8 (=0)
+11: const_5
+12: newarray 1
+14: store_0
+15: load_0
+16: arraylength
+17: const_0
+18: print
+19: exit
+20: return
+#CodeGenerationTest.bsp11()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: read
+12: putstatic 1
+15: getstatic 1
+18: load_2
+19: jgt 5 (=24)
+22: const_1
+23: store_2
+24: load_2
+25: const_0
+26: print
+27: exit
+28: return
+#CodeGenerationTest.bsp12()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: read
+12: putstatic 1
+15: const_1
+16: store_2
+17: getstatic 1
+20: load_2
+21: jgt 10 (=31)
+24: load_2
+25: const_0
+26: jge 5 (=31)
+29: const_2
+30: store_2
+31: load_2
+32: const_0
+33: print
+34: exit
+35: return
+#CodeGenerationTest.bsp13()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: read
+12: putstatic 1
+15: const_1
+16: store_2
+17: getstatic 1
+20: load_2
+21: jle 14 (=35)
+24: getstatic 1
+27: const 10
+32: jge 5 (=37)
+35: const_2
+36: store_2
+37: load_2
+38: const_0
+39: print
+40: exit
+41: return
+#CodeGenerationTest.bsp14()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: read
+12: putstatic 1
+15: const_1
+16: store_2
+17: getstatic 1
+20: load_2
+21: jle 21 (=42)
+24: getstatic 1
+27: const 10
+32: jge 12 (=44)
+35: getstatic 1
+38: const_5
+39: jle 5 (=44)
+42: const_2
+43: store_2
+44: load_2
+45: const_0
+46: print
+47: exit
+48: return
+#CodeGenerationTest.bsp15()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: read
+12: store_2
+13: getstatic 1
+16: load_2
+17: jgt 14 (=31)
+20: getstatic 1
+23: const_1
+24: add
+25: putstatic 1
+28: jmp -15 (=13)
+31: getstatic 1
+34: const_0
+35: print
+36: exit
+37: return
+#CodeGenerationTest.bsp16()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 3
+8: call -8 (=0)
+11: read
+12: putstatic 1
+15: getstatic 1
+18: const 12
+23: jgt 8 (=31)
+26: const_1
+27: store_2
+28: jmp 5 (=33)
+31: const_2
+32: store_2
+33: load_2
+34: const_0
+35: print
+36: exit
+37: return
+#CodeGenerationTest.bsp17()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 4
+8: call -8 (=0)
+11: read
+12: store_2
+13: const_0
+14: store_3
+15: getstatic 1
+18: load_2
+19: jgt 20 (=39)
+22: load_3
+23: getstatic 1
+26: add
+27: store_3
+28: getstatic 1
+31: const_1
+32: add
+33: putstatic 1
+36: jmp -21 (=15)
+39: load_3
+40: const_0
+41: print
+42: exit
+43: return
+#CodeGenerationTest.bsp18()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 4
+8: call -8 (=0)
+11: read
+12: store_2
+13: const_0
+14: store_3
+15: const_2
+16: putstatic 1
+19: getstatic 1
+22: load_2
+23: jgt 20 (=43)
+26: load_3
+27: getstatic 1
+30: add
+31: store_3
+32: getstatic 1
+35: const_1
+36: add
+37: putstatic 1
+40: jmp -21 (=19)
+43: load_3
+44: const_0
+45: print
+46: exit
+47: return
+#CodeGenerationTest.trappingOrdChrTest()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 0
+8: const 7
+13: const 7
+18: mul
+19: const_0
+20: print
+21: trap 1
+23: enter 0, 2
+26: call -26 (=0)
+29: const 33
+34: pop
+35: const 42
+40: pop
+41: const 33
+46: store_0
+47: const 42
+52: store_1
+53: exit
+54: return
+#CodeGenerationTest.testElseIf()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 1
+8: call -8 (=0)
+11: read
+12: store_0
+13: load_0
+14: const_1
+15: jne 13 (=28)
+18: const 9
+23: const_0
+24: print
+25: jmp 25 (=50)
+28: load_0
+29: const_2
+30: jne 13 (=43)
+33: const 8
+38: const_0
+39: print
+40: jmp 10 (=50)
+43: const 7
+48: const_0
+49: print
+50: exit
+51: return
+#CodeGenerationTest.singletonWriteAndRead1()
+0: enter 0, 0
+3: new 1
+6: putstatic 0
+9: getstatic 0
+12: const_3
+13: putfield 0
+16: new 5
+19: putstatic 1
+22: exit
+23: return
+24: enter 0, 0
+27: call -27 (=0)
+30: getstatic 1
+33: const_1
+34: putfield 0
+37: getstatic 1
+40: const_2
+41: putfield 1
+44: getstatic 1
+47: const_3
+48: putfield 2
+51: getstatic 1
+54: const_4
+55: putfield 3
+58: getstatic 1
+61: const_5
+62: putfield 4
+65: getstatic 1
+68: getfield 0
+71: getstatic 1
+74: getfield 1
+77: add
+78: getstatic 1
+81: getfield 2
+84: add
+85: getstatic 1
+88: getfield 3
+91: add
+92: getstatic 1
+95: getfield 4
+98: add
+99: const_0
+100: print
+101: exit
+102: return
+#CodeGenerationTest.singletonWriteAndRead2()
+0: enter 0, 0
+3: new 1
+6: putstatic 0
+9: getstatic 0
+12: const_3
+13: putfield 0
+16: new 5
+19: putstatic 1
+22: getstatic 1
+25: const_1
+26: putfield 0
+29: getstatic 1
+32: const_2
+33: putfield 1
+36: getstatic 1
+39: const_3
+40: putfield 2
+43: getstatic 1
+46: const_4
+47: putfield 3
+50: getstatic 1
+53: const_5
+54: putfield 4
+57: exit
+58: return
+59: enter 0, 0
+62: call -62 (=0)
+65: getstatic 1
+68: const_1
+69: putfield 1
+72: getstatic 1
+75: const_1
+76: putfield 2
+79: getstatic 1
+82: const_1
+83: putfield 3
+86: getstatic 1
+89: getfield 0
+92: getstatic 1
+95: getfield 1
+98: add
+99: getstatic 1
+102: getfield 2
+105: add
+106: getstatic 1
+109: getfield 3
+112: add
+113: getstatic 1
+116: getfield 4
+119: add
+120: const_0
+121: print
+122: exit
+123: return
+#CodeGenerationTest.testRelops()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 1
+8: call -8 (=0)
+11: read
+12: store_0
+13: load_0
+14: const_1
+15: jne 24 (=39)
+18: const 61
+23: const_0
+24: bprint
+25: const 61
+30: const_0
+31: bprint
+32: const 44
+37: const_0
+38: bprint
+39: load_0
+40: const_1
+41: jeq 24 (=65)
+44: const 33
+49: const_0
+50: bprint
+51: const 61
+56: const_0
+57: bprint
+58: const 44
+63: const_0
+64: bprint
+65: load_0
+66: const_1
+67: jge 17 (=84)
+70: const 60
+75: const_0
+76: bprint
+77: const 44
+82: const_0
+83: bprint
+84: load_0
+85: const_1
+86: jgt 24 (=110)
+89: const 60
+94: const_0
+95: bprint
+96: const 61
+101: const_0
+102: bprint
+103: const 44
+108: const_0
+109: bprint
+110: load_0
+111: const_1
+112: jle 17 (=129)
+115: const 62
+120: const_0
+121: bprint
+122: const 44
+127: const_0
+128: bprint
+129: load_0
+130: const_1
+131: jlt 24 (=155)
+134: const 62
+139: const_0
+140: bprint
+141: const 61
+146: const_0
+147: bprint
+148: const 44
+153: const_0
+154: bprint
+155: exit
+156: return
+#CodeGenerationTest.basicOrdChrTest()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 2
+8: call -8 (=0)
+11: const 65
+16: store_0
+17: load_0
+18: const_0
+19: print
+20: const 42
+25: store_0
+26: load_0
+27: const_0
+28: print
+29: const 49
+34: store_1
+35: load_1
+36: const_0
+37: bprint
+38: exit
+39: return
+#CodeGenerationTest.testNestedBreak()
+0: enter 0, 0
+3: exit
+4: return
+5: enter 0, 2
+8: call -8 (=0)
+11: const 21
+16: store_1
+17: const 83
+22: const 84
+27: jge 28 (=55)
+30: const 167
+35: const 168
+40: jge 9 (=49)
+43: jmp 6 (=49)
+46: jmp -16 (=30)
+49: jmp 6 (=55)
+52: jmp -35 (=17)
+55: exit
+56: return
+#SimpleCodeGenerationTest.assignmentExampleGlobals()
+0: enter 0, 0
+3: const 42
+8: dup
+9: putstatic 0
+12: dup
+13: putstatic 1
+16: putstatic 2
+19: new 2
+22: putstatic 3
+25: exit
+26: return
+27: enter 0, 0
+30: call -30 (=0)
+33: getstatic 0
+36: const_0
+37: print
+38: getstatic 1
+41: const_0
+42: print
+43: getstatic 3
+46: getfield 0
+49: const_0
+50: print
+51: getstatic 3
+54: getfield 1
+57: const_0
+58: print
+59: exit
+60: return
